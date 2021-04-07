@@ -4,11 +4,10 @@
 // console.log(`В списке ${ulEl} категории.`);
 
 const ulEl = document.querySelector('ul');
-  
 const ulChild = ulEl.children.length;
 console.log(`В списке ${ulChild} категории.`);
 
-const liChildText = document.querySelectorAll('li.item').forEach(el => {
+ document.querySelectorAll('li.item').forEach(el => {
   const category = el.querySelector('h2').textContent
   const itemsLength = el.querySelector('ul').children.length
   console.log(`- Категория: ${category}`);
