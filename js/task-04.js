@@ -9,10 +9,9 @@ const decrement = () => counterValue -= 1;
 
 const onBtnIncrementClick = () => (incrementValueRef.textContent = increment());
 const onButtonDecrementClieck = () => (incrementValueRef.textContent = decrement());
-const onButtonReset = () => (incrementValueRef.textContent = 0)
 
 decrementActionRef.addEventListener("click", onButtonDecrementClieck);
 incrementActionRef.addEventListener("click", onBtnIncrementClick);
-reset.addEventListener("click", onButtonReset);
+
 
 
